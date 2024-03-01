@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+main {
+  padding: 20px;
+}
+
+.recipe-card {
+  float: left;
+  width: 30%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-card h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.recipe-card p {
+  line-height: 1.5;
+}
+
+.recipe-card a {
+  display: block;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.recipe-card a:hover {
+  background-color: #222;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Additional styles for responsiveness and enhancements */
+
+@media screen and (max-width: 768px) {
+  /* Adjust layout for smaller screens */
+  .recipe-card {
+    width: 45%;
+  }
+}
+
+.recipe-card:nth-child(3n+1) { /* Add margin-left for the first card in each row */
+  margin-left: 0;
+}
